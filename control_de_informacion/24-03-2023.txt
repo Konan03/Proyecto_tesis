@@ -58,3 +58,23 @@ int main(int argc, char **argv)
 
     return 0;
 }
+
+
+
+Para utilizar el software SOPAS con un Lidar LMS412, puedes seguir los siguientes pasos:
+
+Descarga e instala el software SOPAS de SICK AG en tu computadora. El software está disponible en la página web de SICK AG.
+
+Conecta el Lidar LMS412 a tu computadora mediante un cable Ethernet.
+
+Abre el software SOPAS. Se abrirá una ventana de "Explorador de dispositivos" que muestra los dispositivos conectados a tu red.
+
+Busca el Lidar LMS412 en la lista de dispositivos. Debería aparecer como "LMS4xx" o "LMS4xxx". Haz clic en el dispositivo para seleccionarlo.
+
+Una vez seleccionado el Lidar LMS412, podrás acceder a sus configuraciones y parámetros en la ventana de "Propiedades del dispositivo". En esta ventana, puedes configurar la frecuencia de escaneo, la resolución de escaneo, la intensidad del láser, entre otros parámetros.
+
+Para ver los datos de escaneo del Lidar LMS412, abre la ventana "Datos de escaneo" en el software SOPAS. Aquí podrás ver los datos de distancia y ángulo en tiempo real, así como visualizarlos en una representación gráfica.
+
+Además, puedes guardar los datos de escaneo en diferentes formatos, como CSV, TXT, DAT y LMD. Estos archivos se pueden utilizar para analizar los datos de escaneo posteriormente en otros programas.
+
+Estos son los pasos básicos para utilizar el software SOPAS con un Lidar LMS412. Es posible que debas ajustar la configuración y los parámetros del Lidar de acuerdo a tus necesidades específicas.
