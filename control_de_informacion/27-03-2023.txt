@@ -1,0 +1,43 @@
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+
+class MainApp(QMainWindow):
+    def __init__(self, parent=None, *args):
+        super(MainApp, self).__init__(parent=parent)
+
+        self.setFixedSize(500, 300)
+        self.setWindowTitle("Primera App")
+        # self.setMinimumSize(500, 300)
+        # self.setMaximumSize(700, 500)
+
+        width = self.frameGeometry().width() #obtiene el valor del tamaño de la ventana
+        height = self.frameGeometry().height() #obtiene el valor del tamaño de la ventana
+
+        label = QLabel("Primer label", self) #crea un label
+        #label.setGeometry(0, 0, 100, 50) #posicion x, posicion y, largo y alto
+        label.setStyleSheet("background:#424242; color:white") #estilo del label
+        label.setAlignment(Qt.AlignCenter) #cambia la ubicacion del texto, si queremos mas manejo de la ubicacion usamoes esto (Qt.AlignCenter | Qt.AlignCenter)
+
+        self.setCentralWidget(label) # me cambia el tamaño del label al tamaño de la ventana
+
+if __name__ == '__main__':
+    app = QApplication([]) #inicia la app, esto solo se puede instanciar una vez
+    window = MainApp() #crea la ventana
+    window.show() #la muestra
+    app.exec_()#con esto iniciamos un ciclo de eventos
+
+
+
+
+#instancia
+#class Padre(object):
+#    def __init__(self, *arg):
+#        super(Padre, self).__init__()
+#        print("clase instanciada")
+#    
+#    def saludar(self, param=""):
+#        return "hola " + param
+
+#hijo = Padre()
+#print(hijo.saludar("manuel"))
